@@ -1,40 +1,106 @@
 <!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+
 <head>
+  
+
+  <title>Ted Chiang Stories</title>
+
+  <style>
+
+    * {
+      border: thin red solid;
+    }
+
+    .body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+
+    }
+
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      max-width: 500px;
+      justify-content: center;
+      flex-grow: 1
+    }
+
+    .link a {
+      color: #001e1d;
+      text-decoration: none;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+
+    .banner-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 150px;
+    }
+
+    .link{
+      background-image:"https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
+      display: flex;
+      align-items: center;
+
+
+    }
+
+    .center {
+      align-items: center
+    }
+  </style>
 
 </head>
 
-<body>
-  <div class="header">
-    <img src = "https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-  </div>
-  
-  <div class ="header-desc">
-    A collection of sci-fi short stories written by Chinese-American author <b>Ted Chiang</b>, winner of multiple Hugo, Nebula, and Locus wards.    
-  </div>
-  
-  <div class = "link">
-    <img src = "">
-    <a target = "_blank" href = "https://ia802706.us.archive.org/33/items/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf">72 Letters </a>
-  
-  </div>  
+<body class = "body">
 
-  <div class = "link">
-    <img src = "">
-    <a target = "_blank" href = "https://jenniecreatesclasses.files.wordpress.com/2021/03/tower_of_babylon_-_ted_chiang.pdf">Tower of Babylon</a>
-  
-  </div>  
+  <div class = "items">
+    <div class ="banner center">
+      <img class = banner-image src = "https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+    </div>
+    <div class ="header-desc center">
+      A collection of sci-fi short stories written by Chinese-American author <b>Ted Chiang</b>, winner of multiple Hugo, Nebula, and Locus awards.
+    </div>
 
-  <div class = "link">
-    <img src = "">
-    <a target = "_blank" href = "https://noorsiddiqui.com/papers/ted-chiang-story-of-your-life.pdf">Story of Your Life </a>
-  
-  </div>  
-
-  <div class = "link">
-      <img src = "">
-      <a target = "_blank" href = "https://www.lightspeedmagazine.com/fiction/exhalation/">Exhalation </a>
+    <hr>
     
-  </div>  
+    <div class = "link center">
+      <img class = "thumbnail" src = "https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+      <a target = "_blank" href = "https://ia802706.us.archive.org/33/items/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf">72 Letters</a>
+    </div>
+    <div class = "link">
+      <img  class = "thumbnail" src = "https://plus.unsplash.com/premium_photo-1678370891500-0891b7161930?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=355&q=80">
+      <a target = "_blank" href = "https://jenniecreatesclasses.files.wordpress.com/2021/03/tower_of_babylon_-_ted_chiang.pdf">Tower of Babylon</a>
+    
+    </div>
+    <div class = "link">
+      <img class = "thumbnail" src = "https://images.unsplash.com/photo-1476283289026-d5e3b0e38f75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80">
+      <a target = "_blank" href = "https://noorsiddiqui.com/papers/ted-chiang-story-of-your-life.pdf">Story of Your Life </a>
+    
+    </div>
+    <div class = "link">
+        <img class = "thumbnail" src = "https://images.unsplash.com/photo-1529958986175-1cacd1317691?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80">
+        <a target = "_blank" href = "https://www.lightspeedmagazine.com/fiction/exhalation/">Exhalation </a>
+    
+    </div>
+  </div>
   
 
 </body>
